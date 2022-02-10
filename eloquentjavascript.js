@@ -1,4 +1,4 @@
-//FizzBuzz
+// 1. FizzBuzz 
 
 for (let n = 1; n <= 100; n++) {
   if (n % 3 === 0 && n % 5 === 0) {
@@ -12,7 +12,7 @@ for (let n = 1; n <= 100; n++) {
   }
 }
 
-//Chess Board
+// 2. Chess Board
 
 let chessBoardString = "";
 let size = 16;
@@ -25,7 +25,7 @@ for (let i = 0; i < size*size; i += size) {
 }
 console.log(chessBoardString);
 
-// The sum of a range
+// 3. The sum of a range
 
 function range(start, end, step = 1) {
   let array = [];
@@ -52,7 +52,7 @@ console.log(range(5, 2, -1));
 console.log(sum(range(1, 10)));
 // → 55
 
-// Reversing an array
+// 4. Reversing an array
 
 function reverseArray(array) {
   let newArray = [];
@@ -80,7 +80,7 @@ reverseArrayInPlace(arrayValue);
 console.log(arrayValue);
 // → [5, 4, 3, 2, 1]
 
-// A list
+// 5. A list
 
 function arrayToList(array) {
   let list = {};
@@ -123,7 +123,7 @@ function nth(list, n) {
 //console.log(nth(arrayToList([10, 20, 30]), 2));
 // → 20
 
-// Deep comparison
+// 6. Deep comparison
 
 function isObject(object) {
   return object != null && typeof object === 'object';
